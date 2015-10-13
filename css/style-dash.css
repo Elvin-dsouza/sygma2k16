@@ -1,0 +1,219 @@
+body{
+	font-family: 'Roboto', Sans-serif;
+	margin:0px;
+	padding:0px;
+	background: #ECEFF1;
+}
+
+
+header
+{
+	background:rgba(76,175,80,0.0);
+	color:white;
+	display:flex;
+	flex-flow:column nowrap;
+	position:relative;
+	top:0;
+	left:0;
+	overflow:hidden;
+	box-shadow:0px 0px 5px 1px #333;
+	width:100%;
+	
+
+
+}
+.color-layer
+{
+	background:#3F51B5;
+	color:white;
+	display:flex;
+	flex-flow:column nowrap;
+	position:absolute;
+	z-index: 2;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:0.8;
+	
+}
+.material-layer
+{
+	background:white;
+	width:50px;
+	height:50px;
+	position:absolute;
+	z-index: 3;
+	top:80;
+	left:0;
+	border-radius:50%;
+	opacity:0.2;
+	border:1px solid;
+
+}
+
+.materialise
+{
+	animation: material 1s;
+	animation-timing-function:cubic-bezier(1,.2,.9,.29);
+	animation-fill-mode:forwards;
+	display:block;
+
+}
+
+@-webkit-keyframes material{
+
+	0%{
+		transform:scale(1,1);
+		border-radius:50%;
+
+	}
+	50%{
+		border-radius:50%;
+	}
+
+	100%	{
+		transform:scale(600,600);
+		border-radius:50%;
+	}
+}
+header > img
+{
+	min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	z-index:1;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#main-heading
+{
+	font-size:4em;
+	font-weight:bold;
+	flex:1;
+	order:1;
+	text-align: center;
+	padding:10px;
+	position:static;
+	z-index:3;
+}
+
+#main-nav
+{
+	flex:1;
+	order:2;
+	text-align: center;
+	display:flex;
+	flex-flow:row wrap;
+	max-width:100%;
+	margin:0 auto;
+	position:static;
+	z-index: 4;
+
+}
+
+#main-nav >span{
+	justify-content:center;
+	text-align:center;
+	flex:1;
+	margin:10px;
+	padding: 5px;
+	min-width: 25px;
+}
+
+#main-nav > span > a{
+	text-align:center;
+	color:white;
+	text-decoration: none;
+	height:inherit;
+	padding:10px;
+
+
+}
+
+#main-nav a:hover{
+	border-bottom:3px solid ;
+	border-color:rgba(255,255,255,0.5);
+}
+
+
+td,tr,th
+{
+	border:0px;
+	padding:10px;
+}
+
+td{
+	padding:10px;
+	background:grey;
+}
+
+th{
+	background:lightblue;
+}
+
+table
+{
+	padding:10px;
+	margin-top:90px;
+}
+main
+{
+	width:90%;
+	margin:0 auto;
+	padding-left:15%;
+
+}
+
+
+main > section
+{
+	display:inline-block;
+	width:25%;
+	margin:0 auto;
+	margin:20px;
+	
+
+}
+
+main > section > article
+{
+	background:#333;
+	min-width:200px;
+	min-height:200px;
+	padding:30px;
+	color:white;
+	margin:30px;
+	cursor: pointer;
+
+}
+
+
+
+
+@media screen and (max-width:500px)
+{
+	#main-nav
+	{
+		margin-left:25px;
+	}
+
+}
+
+form
+{
+	padding:10px;
+	color:white;
+}
+
+form > input,select,datalist
+{
+	color:black;
+	padding:10px;
+	margin:5px;
+}

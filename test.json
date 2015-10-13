@@ -1,0 +1,856 @@
+{
+   "status":"ok",
+   "count":10,
+   "count_total":16,
+   "pages":2,
+   "posts":[
+      {
+         "id":108,
+         "type":"post",
+         "slug":"b-com-cource-inauguration",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=108",
+         "status":"publish",
+         "title":"B.Com Cource Inauguration",
+         "title_plain":"B.Com Cource Inauguration",
+         "content":"<p>B.Com course was inaugurated on 8 July 2014.<\/p>\n",
+         "excerpt":"<p>B.Com course was inaugurated on 8 July 2014.<\/p>\n",
+         "date":"2014-07-24 09:35:26",
+         "modified":"2014-07-24 09:35:26",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2012-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_422819147861334"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2012.jpg",
+               "width":1800,
+               "height":1200
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2012-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2012-300x200.jpg",
+               "width":300,
+               "height":200
+            }
+         }
+      },
+      {
+         "id":104,
+         "type":"post",
+         "slug":"celebration-of-150th-birth-anniversary-of-swami-vivekananda",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=104",
+         "status":"publish",
+         "title":"Celebration of 150th Birth Anniversary of Swami Vivekananda",
+         "title_plain":"Celebration of 150th Birth Anniversary of Swami Vivekananda",
+         "content":"<p>UGC sponsored national conference on &#8220;Celebration of 150th Birth Anniversary of Swami Vivekananda&#8221; was held on 11 and 12 July 2014.<\/p>\n",
+         "excerpt":"<p>UGC sponsored national conference on &#8220;Celebration of 150th Birth Anniversary of Swami Vivekananda&#8221; was held on 11 and 12 July 2014.<\/p>\n",
+         "date":"2014-07-24 08:50:56",
+         "modified":"2014-07-24 08:50:56",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2084-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_422808601195722"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2084.jpg",
+               "width":1800,
+               "height":1200
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2084-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2084-300x200.jpg",
+               "width":300,
+               "height":200
+            }
+         }
+      },
+      {
+         "id":100,
+         "type":"post",
+         "slug":"council-inauguration",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=100",
+         "status":"publish",
+         "title":"Council Inauguration",
+         "title_plain":"Council Inauguration",
+         "content":"<p>Student council was inaugurated on 5 July 2014.<\/p>\n",
+         "excerpt":"<p>Student council was inaugurated on 5 July 2014.<\/p>\n",
+         "date":"2014-07-24 08:46:45",
+         "modified":"2014-07-24 08:46:45",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2683-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_422807924529123"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2683.jpg",
+               "width":1800,
+               "height":1200
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2683-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2683-300x200.jpg",
+               "width":300,
+               "height":200
+            }
+         }
+      },
+      {
+         "id":98,
+         "type":"post",
+         "slug":"orientation",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=98",
+         "status":"publish",
+         "title":"Orientation",
+         "title_plain":"Orientation",
+         "content":"<p>An orientation programme was held for first year students on 14 June 2014.<\/p>\n",
+         "excerpt":"<p>An orientation programme was held for first year students on 14 June 2014.<\/p>\n",
+         "date":"2014-07-24 08:40:31",
+         "modified":"2014-07-24 08:40:31",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0640-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_422806711195911"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0640.jpg",
+               "width":1800,
+               "height":1200
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0640-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0640-300x200.jpg",
+               "width":300,
+               "height":200
+            }
+         }
+      },
+      {
+         "id":91,
+         "type":"post",
+         "slug":"iqac-fdp-programme",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=91",
+         "status":"publish",
+         "title":"IQAC FDP Programme",
+         "title_plain":"IQAC FDP Programme",
+         "content":"<p>A FDP programme was organised by IQAC on 13 June 2014.<\/p>\n",
+         "excerpt":"<p>A FDP programme was organised by IQAC on 13 June 2014.<\/p>\n",
+         "date":"2014-07-24 08:38:57",
+         "modified":"2014-07-24 08:38:57",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+            {
+               "id":92,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2683.jpg",
+               "slug":"dsc_2683",
+               "title":"DSC_2683",
+               "description":"",
+               "caption":"",
+               "parent":91,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2683.jpg",
+                     "width":1800,
+                     "height":1200
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2683-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2683-300x200.jpg",
+                     "width":300,
+                     "height":200
+                  }
+               }
+            },
+            {
+               "id":93,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2084.jpg",
+               "slug":"dsc_2084",
+               "title":"DSC_2084",
+               "description":"",
+               "caption":"",
+               "parent":91,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2084.jpg",
+                     "width":1800,
+                     "height":1200
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2084-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2084-300x200.jpg",
+                     "width":300,
+                     "height":200
+                  }
+               }
+            },
+            {
+               "id":94,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2012.jpg",
+               "slug":"dsc_2012",
+               "title":"DSC_2012",
+               "description":"",
+               "caption":"",
+               "parent":91,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2012.jpg",
+                     "width":1800,
+                     "height":1200
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2012-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_2012-300x200.jpg",
+                     "width":300,
+                     "height":200
+                  }
+               }
+            },
+            {
+               "id":95,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0640.jpg",
+               "slug":"dsc_0640",
+               "title":"DSC_0640",
+               "description":"",
+               "caption":"",
+               "parent":91,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0640.jpg",
+                     "width":1800,
+                     "height":1200
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0640-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0640-300x200.jpg",
+                     "width":300,
+                     "height":200
+                  }
+               }
+            },
+            {
+               "id":96,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0606.jpg",
+               "slug":"dsc_0606",
+               "title":"DSC_0606",
+               "description":"",
+               "caption":"",
+               "parent":91,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0606.jpg",
+                     "width":1800,
+                     "height":1200
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0606-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0606-300x200.jpg",
+                     "width":300,
+                     "height":200
+                  }
+               }
+            }
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0606-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_422806351195947"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0606.jpg",
+               "width":1800,
+               "height":1200
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0606-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2014\/07\/DSC_0606-300x200.jpg",
+               "width":300,
+               "height":200
+            }
+         }
+      },
+      {
+         "id":87,
+         "type":"post",
+         "slug":"bca-workshop",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=87",
+         "status":"publish",
+         "title":"BCA Workshop",
+         "title_plain":"BCA Workshop",
+         "content":"<p>One day BCA Syllabus workshop was held in the college on 1 Dec. 2013 in the college.<\/p>\n",
+         "excerpt":"<p>One day BCA Syllabus workshop was held in the college on 1 Dec. 2013 in the college.<\/p>\n",
+         "date":"2013-12-14 04:05:45",
+         "modified":"2013-12-14 04:05:45",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+            {
+               "id":88,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/12\/bca_workshop.jpg",
+               "slug":"bca_workshop",
+               "title":"bca_workshop",
+               "description":"",
+               "caption":"",
+               "parent":87,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/12\/bca_workshop.jpg",
+                     "width":1200,
+                     "height":800
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/12\/bca_workshop-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/12\/bca_workshop-300x200.jpg",
+                     "width":300,
+                     "height":200
+                  }
+               }
+            }
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/12\/bca_workshop-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_327812054028711"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/12\/bca_workshop.jpg",
+               "width":1200,
+               "height":800
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/12\/bca_workshop-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/12\/bca_workshop-300x200.jpg",
+               "width":300,
+               "height":200
+            }
+         }
+      },
+      {
+         "id":79,
+         "type":"post",
+         "slug":"guest-lecture",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=79",
+         "status":"publish",
+         "title":"Guest Lecture",
+         "title_plain":"Guest Lecture",
+         "content":"<p>A guest lecture on Image Management\u00a0 was organized by HRD Department on 16th September, 2013.\u00a0 The resource person was Ms. Deepti Shetty, Asst. professor at CI Tech, Bangalore.<\/p>\n",
+         "excerpt":"<p>A guest lecture on Image Management\u00a0 was organized by HRD Department on 16th September, 2013.\u00a0 The resource person was Ms. Deepti Shetty, Asst. professor at CI Tech, Bangalore.<\/p>\n",
+         "date":"2013-10-05 09:12:01",
+         "modified":"2013-10-05 09:12:01",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+            {
+               "id":80,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/hr_oct_2013.jpg",
+               "slug":"hr_oct_2013",
+               "title":"hr_oct_2013",
+               "description":"",
+               "caption":"",
+               "parent":79,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/hr_oct_2013.jpg",
+                     "width":1200,
+                     "height":900
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/hr_oct_2013-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/hr_oct_2013-300x225.jpg",
+                     "width":300,
+                     "height":225
+                  }
+               }
+            }
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/hr_oct_2013-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_301470039996246"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/hr_oct_2013.jpg",
+               "width":1200,
+               "height":900
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/hr_oct_2013-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/hr_oct_2013-300x225.jpg",
+               "width":300,
+               "height":225
+            }
+         }
+      },
+      {
+         "id":74,
+         "type":"post",
+         "slug":"drawing-competition",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=74",
+         "status":"publish",
+         "title":"Drawing Competition",
+         "title_plain":"Drawing Competition",
+         "content":"<p>Rovers and Rangers Unit organised drawing competition at Mangaladevi temple premises to the students of local area on 9th September 2013. More than 273 students participated \u00a0in the competition.<\/p>\n",
+         "excerpt":"<p>Rovers and Rangers Unit organised drawing competition at Mangaladevi temple premises to the students of local area on 9th September 2013. More than 273 students participated \u00a0in the competition.<\/p>\n",
+         "date":"2013-10-05 09:08:43",
+         "modified":"2013-10-05 09:08:43",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+            {
+               "id":75,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/draw_oct_2013.jpg",
+               "slug":"draw_oct_2013",
+               "title":"draw_oct_2013",
+               "description":"",
+               "caption":"",
+               "parent":74,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/draw_oct_2013.jpg",
+                     "width":1200,
+                     "height":798
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/draw_oct_2013-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/draw_oct_2013-300x199.jpg",
+                     "width":300,
+                     "height":199
+                  }
+               }
+            }
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/draw_oct_2013-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_301469356662981"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/draw_oct_2013.jpg",
+               "width":1200,
+               "height":798
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/draw_oct_2013-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/draw_oct_2013-300x199.jpg",
+               "width":300,
+               "height":199
+            }
+         }
+      },
+      {
+         "id":70,
+         "type":"post",
+         "slug":"medical-camp",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=70",
+         "status":"publish",
+         "title":"Medical Camp",
+         "title_plain":"Medical Camp",
+         "content":"<p>Rovers and Rangers Unit in association with KMC Hospital, Attavar, organized general and specialised (eye, Children, Skin, Ortho) medical camp for the general public at Someshwer temple Campus\u00a0 on 16th Sept. 2013<\/p>\n",
+         "excerpt":"<p>Rovers and Rangers Unit in association with KMC Hospital, Attavar, organized general and specialised (eye, Children, Skin, Ortho) medical camp for the general public at Someshwer temple Campus\u00a0 on 16th Sept. 2013<\/p>\n",
+         "date":"2013-10-05 09:06:32",
+         "modified":"2013-10-05 09:06:32",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+            {
+               "id":71,
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/med_oct_2013.jpg",
+               "slug":"med_oct_2013",
+               "title":"med_oct_2013",
+               "description":"",
+               "caption":"",
+               "parent":70,
+               "mime_type":"image\/jpeg",
+               "images":{
+                  "full":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/med_oct_2013.jpg",
+                     "width":1200,
+                     "height":797
+                  },
+                  "thumbnail":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/med_oct_2013-150x150.jpg",
+                     "width":150,
+                     "height":150
+                  },
+                  "medium":{
+                     "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/med_oct_2013-300x199.jpg",
+                     "width":300,
+                     "height":199
+                  }
+               }
+            }
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/med_oct_2013-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_301468986663018"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/med_oct_2013.jpg",
+               "width":1200,
+               "height":797
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/med_oct_2013-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/10\/med_oct_2013-300x199.jpg",
+               "width":300,
+               "height":199
+            }
+         }
+      },
+      {
+         "id":68,
+         "type":"post",
+         "slug":"bca-extension-activity-2",
+         "url":"http:\/\/sdm.ac.in\/blog\/?p=68",
+         "status":"publish",
+         "title":"BCA Extension Activity",
+         "title_plain":"BCA Extension Activity",
+         "content":"<p>On 21 September 2013 BCA department conducted a session on basics of computers to the students of Government Hr. Pry. School and Government High School, Balmatta.<\/p>\n",
+         "excerpt":"<p>On 21 September 2013 BCA department conducted a session on basics of computers to the students of Government Hr. Pry. School and Government High School, Balmatta.<\/p>\n",
+         "date":"2013-10-01 03:12:11",
+         "modified":"2013-10-01 03:12:11",
+         "categories":[
+
+         ],
+         "tags":[
+
+         ],
+         "author":{
+            "id":1,
+            "slug":"webmaster",
+            "name":"webmaster",
+            "first_name":"",
+            "last_name":"",
+            "nickname":"webmaster",
+            "url":"",
+            "description":""
+         },
+         "comments":[
+
+         ],
+         "attachments":[
+
+         ],
+         "comment_count":0,
+         "comment_status":"closed",
+         "thumbnail":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/09\/cs_ext_2013-150x150.jpg",
+         "custom_fields":{
+            "fb_fan_page_post_id":[
+               "298300086979908_299362626873654"
+            ]
+         },
+         "thumbnail_size":"thumbnail",
+         "thumbnail_images":{
+            "full":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/09\/cs_ext_2013.jpg",
+               "width":1200,
+               "height":800
+            },
+            "thumbnail":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/09\/cs_ext_2013-150x150.jpg",
+               "width":150,
+               "height":150
+            },
+            "medium":{
+               "url":"http:\/\/sdm.ac.in\/blog\/wp-content\/uploads\/2013\/09\/cs_ext_2013-300x200.jpg",
+               "width":300,
+               "height":200
+            }
+         }
+      }
+   ]
+}
