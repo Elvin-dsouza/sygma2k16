@@ -3,7 +3,7 @@ Header Style Rules
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 body
-{margin:0px;
+{	margin:0px;
 padding:0px;
 
 font-family:'Roboto',sans-serif;}
@@ -11,21 +11,58 @@ font-family:'Roboto',sans-serif;}
 .card > h3,p{
 	font-weight:300;
 }
+ #error
+ {
+ 	background:rgba(255,0,0,0.5);
+ 	padding:20px;
+ 	width:100%;
+ 	color:white;
+ 	font-weight:300;
+ 	font-family: 'Roboto',sans-serif;
+ }
+.page-wipe
+{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:rgba(0,0,0,0.8);
+	color:white;
+	font-size:1em;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	z-index:1200;
+}
+ .timer-box{
+ 	position:fixed;
+ 	z-index:1000;
+ 	background:rgba(0,0,0,0.6);
+ 	color:white;
+ 	font-family:'Roboto',sans-serif;
+ 	font-size:1.5em;
+ 	padding:10px;
+ 	top:0;
+ 	left:50px;
+	display:none;
+ }
+
 
 header
 {
 	/*background:url('../images/background.jpg');*/
-	
+
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-weight:700;
 	font-style:normal;
-	
+
 	padding:0px;
 	margin:0px;
-	
+
 	width:100%;
 	margin:0 auto;
 	background-color:#03A9F4;
@@ -34,7 +71,7 @@ header
 
 	#header-top-bar{
 		background:rgba(0,0,0,0.6);
-		
+
 		top:0px;
 		left:00px;
 		display:-webkit-flex;
@@ -59,15 +96,15 @@ header
 
 
 	#heading-area{
-		
-	
 
-		height:100%;
+
+
+
 		width:100%;
 		background:rgba(0,0,0,0.8);
 		padding:0px;
 		margin:0px;
-		padding-bottom:150px;
+
 		color:#CFD8DC;
 		-webkit-justify-content:center;
 		    -ms-flex-pack:center;
@@ -84,24 +121,26 @@ header
 
 	#heading-area > figure
 	{
-		padding:30px;
+		padding:0px;
+
 	}
 	#heading-area > figure >img{
-		width:180px;
-		height:180px;
-		border-radius:50%;
+		width:400px;
+		height:400px;
+		border-radius:0%;
 		padding:0px;
 		margin:0 auto;
-		box-shadow:0px 0px 2px 1px #333;
-		border:5px solid #CFD8DC;
+
+
+
 	}
 
 	#heading-area h1{
 		margin:0 auto;
-		padding:0px;
+		padding:10px;
 		text-align: center;
 		color:#ECEFF1;
-		font-size:4em;
+		font-size:2em;
 		font-family: 'roboto',sans-serif;
 		font-weight:300;
 
@@ -136,7 +175,7 @@ footer
 	background-color:#263238;
 
 	width:100%;
-	
+
 
 
 }
@@ -256,10 +295,11 @@ footer >section> aside > nav > a:hover{
 {
 	width:90%;
 
-	
+
 	margin:0 auto;
-	margin-top:-100px;
-	
+	margin-top:20px;
+
+
 
 }
 
@@ -279,8 +319,11 @@ footer >section> aside > nav > a:hover{
 	align-items:center;
 	font-weight:300px;
 	font-size:1.5em;
+	position:relative;
 
 }
+
+
 .result
 {
 	display:flex;
@@ -303,7 +346,7 @@ footer >section> aside > nav > a:hover{
 }
 .bar{
 
-	
+
 	background:lightgreen;
 	max-width:100px;
 	min-width:20px;
@@ -361,7 +404,7 @@ footer >section> aside > nav > a:hover{
 {
 	font-weight:300;
 	font-size:1.5em;
-	
+
 	color:#333;
 
 }
@@ -371,7 +414,7 @@ footer >section> aside > nav > a:hover{
 	padding:10px;
 	display:flex;
 	flex-flow:column nowrap;
-	
+
 
 }
 
@@ -408,112 +451,124 @@ footer >section> aside > nav > a:hover{
 
 .icon-check
 {
-	
+
 	width:50px;
 	height:50px;
 	padding:10px;
 	fill:white;
 }
 .material-button
-      {
-        color:white;
+{
+	color:white;
 
 
-        display:flex;
-        font-size:0.8em;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        font-family: 'Roboto',sans-serif;
-        transition:all 100ms;
-        position:relative;
-        overflow: hidden;
-        font-weight: 500;
+	display:flex;
+	font-size:0.8em;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-family: 'Roboto Mono',sans-serif;
+	transition:all 100ms;
+	position:relative;
+	overflow: hidden;
+	font-weight: 500;z-index: 1;
 
 
-      }
-	
-	.square
-      {
-       
-        padding:10px;
-        min-width:100px;
-        min-height:30px;
-        
+}
+.raised > .material-layer
+{
+	background:white;
+
+}
+
+.flat > .material-layer
+{
+	background: white;
+}
+.material-layer
+{
+	width:2px;
+	height:2px;
+	border-radius:50%;
+
+	position:absolute;
+	top:10px;
+	left:10px;
+
+	background:white;
+	opacity:0.6;
+
+	transition:transform 800ms linear,opacity 1200ms linear;
+
+	visibility: hidden;
 
 
-      }
+}
 
-      .circle
-      {
-      	
-        width:60px;
-        height:60px;
-        border-radius: 50%;
-        transition:all 100ms;
-        
-      }
+.flat
+{
+
+}
+.raised
+{
+		background:#3F51B5;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition:all 0.5s;
+
+		border-radius:3px;
+}
+
+.light
+{
+	background:white;
+	font-weight:800;
+	font-size:2em;
+}
+
+.dark
+{
+	background: grey;
+}
+.raised:hover{
+		background:#3949AB;
+		 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 
 
-      .material-layer
-      {
-        width:5px;
-        height:5px;
-        border-radius:50%;
+.animate
+{
+	visibility: visible;
+	transform: scale(200);
+	border-radius:50%;
+	opacity:0;
+}
 
-        position:absolute;
-        top:10px;
-        left:10px;
+.square
+{
 
-        background:white;
-        opacity:0.5;
-          transform: scale(10);
-        transition:transform 1s ease-out,opacity 1s ease-in-out;
-        visibility: hidden;
+	padding:10px;
+	min-width:100px;
+	min-height:30px;
 
 
-      }
 
-      .flat
-      {
-        color:#FF5722
-      }
-      .raised
-      {
-          background:#3F51B5;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-      }
+}
+.circle
+{
 
-      .light
-      {
-        background:white;
-        font-weight:800;
-        font-size:2em;
-      }
+	width:60px;
+	height:60px;
+	border-radius: 50%;
 
-      .dark
-      {
-        background: grey;
-      }
-      .raised:hover{
-          background:#3949AB;
-      }
-    
+	overflow:hidden;
 
-      .animate
-      {
-        visibility: visible;
-        transform: scale(100);
-        border-radius:50%;
-        opacity:0;
-      }
-
+}
 @media screen and (max-width:700px)
 {
 	#heading-area h1{
 		font-size: 1.5em;
 		padding:30px;
-		
+
 	}
 
 	#heading-area figure{
@@ -523,7 +578,7 @@ footer >section> aside > nav > a:hover{
 	#heading-area
 	{
 			padding:0px;
-			
+
 	}
 	#content{
 		margin:0px;

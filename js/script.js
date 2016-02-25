@@ -1,172 +1,145 @@
-var modalOpened=0;
-			var mHeight;
+			var maxcards=8;
+			var facingRight=1;
+			var cardCount=1;
+			var cardWidth = 250;
+			var cardPadding = 46;
 			$(function(){
-				
+
 				header_load();
+				if($(window).width() < 500)
+				{
+					maxcards=9;
+				}
+				else if($(window).width() < 700)
+				{
+					maxcards=8;
+				}
+				else
+				{
+					 maxcards=6;
+				}
+
 
 			});
-
+			var modalOpened=0;//variable:holds the Boolean Flag for modal opened
+			var mHeight;//height of the window
 			var slideTimer; //variable to hold the interval id
-			var $heading=$("#heading-area");
-			var $cloud1=$(".icon-cloud");
+			var $heading=$("#heading-area");//cache heading area which stores the heading and image
+			var $cloud1=$(".icon-cloud");//unused
 			var $cloud2=$(".icon-cloud2");
-			var $mainNav=$(".main-nav");
-			var $itemInfo=$(".item-info");
+			var $mainNav=$(".main-nav");//caches main nav which is used frequently in fixing and releasing the main navigation bar
+			var $itemInfo=$(".item-info");//caches the information buttons which animate in on scroll, reduces the amount of processing required on scroll for faster transtion's
 			var set=0;
-			var Timer;
-			var startedScroll=0;
+			var Timer;//variable to hold any set timer
+			var startedScroll=0;//unused block
 			var isScrolling=0;
 			var reachedEnd=0;
 			var reachedStart=0;
 			var finishedScrolling=0;
 			var vheight;
-			$(".view-page").each(function(i){
 
-				$(".view-page").eq(i).css({
-					"flex":" " + randomIntFromInterval(3,5)
-				});
-
-			});
-
-
-
-			function header_load()
+			function header_load()//called when the page has loaded provides a subtle animation to the social icons bar
 			{
 
-				
+
 				$('#social-bar').fadeIn(1000);
 				$('#social-bar').animate({
 					bottom:'+=60px'
 				},500);
-				/*sliderTimer=setInterval(function(){
-					slideChange();
-				},1000*20);*/
-
-
-
 
 			}
 
-			
+
 			function randomIntFromInterval(min,max)
 			{
 			    return Math.floor(Math.random()*(max-min+1)+min);
 			}
-			var array=[
-				"picjumbo.com_HNCK4400.jpg",
-				"hback.jpg",
-				"hback2.jpg"
-			]
-			var counter=0;
-			function slideChange()
-			{
 
-				counter++;
-				$heading.animate({
-					background:'rgba(0,0,0,0.7);'
-				},500);
-
-				$heading.animate({
-					background:'rgba(0,0,0,0.4);'
-				},500);
-				if(counter == 2)
-				{
-					counter=0;
-				}
-
-			}
-			function scrollhere(obj)
+			function scrollhere()
 			{
 						$('html, body').animate({scrollTop: $("#sector").offset().top}, 1200);
 			}
 
-			function scrollnav(obj)
+			function scrollnav(obj)//function to scroll to a specified element in the dom
 			{
 						$('html, body').animate({scrollTop: $(obj).offset().top - $mainNav.height()-50}, 1000);
 			}
 
-			var scrollFixed=0;
-			$(window).scroll(function(){
+			var scrollFixed=0;//boolean to hold whether the navbar is currently fixed or static
+			$(window).scroll(function(){//callback on scroll
 
 
-					var parscr=$(this).scrollTop();//gets the scrolled height of the window
-
-					if(parscr > $("#sector").offset().top -$(window).height()/8)
+					var parscr=$(this).scrollTop();//gets the current scrolled height of the window
+					// callback when scroll position reaches the top of the information buttons sector
+					if(parscr > $("#sector").offset().top -$(window).height()/8)// starts animation of the 3 information icon/buttons in the '#sector' container
 					{
 
 
 
-							$itemInfo.each(function(i){
+							$itemInfo.each(function(i){//gets each of the information sections
 								setTimeout(function(){
-									$itemInfo.eq(i).addClass('show-img');
-								},200*i);
+									$itemInfo.eq(i).addClass('show-img');//shows image
+								},200*i);//animation of each section occours in a progression with a difference of 200ms
 							});
-
-
-
 					}
+					//end of section---
+					//callback when the scrolltop reaches the top of the navigation bar
 					if(parscr > $mainNav.offset().top )
 					{
 
 
 
-							if(scrollFixed == 0)
-							{
+							if(scrollFixed == 0)//check if navigation bar is currently in the fixed or released state
+							{	//if the navigation bar is not fixed then return to its original static state as the scroll position has reached the initial navigation bar location
+								//TODO:  Find a more efficient way to deal with the above situation , perform adjustments for optimal responsiveness
 								$mainNav.css({
 										"position":"fixed",
 										"top":"0",
 										"left":"0",
 										"width":"100%",
 									});
-								vheight=$mainNav.offset().top;
-								scrollFixed=1;
+								vheight=$mainNav.offset().top;//updates the height of the nav every time NOTE:Ineffecient --
+								scrollFixed=1;//change the boolean scrollfixed to true
 							}
-									
+
 
 
 
 					}
-					if(parscr < vheight )
+					if(parscr < vheight )// check if the current scrolled location is less than the height (kept frequently updated) , ie: the navigation bar must me made static
 					{
 
-
-							
-									$mainNav.css({
+								$mainNav.css({
 										"position":"static",
-										
+
 										"width":"auto",
 									});
 									scrollFixed=0;
-							
-
-							
-									
-								
 
 
 
 					}
 
 
-					
 
 
-					if(parscr >$(".contacts").offset().top - $(window).height()/2)
+
+					/*if(parscr >$(".contacts").offset().top - $(window).height()/2)//check if the scroll position is half the height of the window offset from the position of the contacts container
 					{
 
 
-							$(".contact").each(function(i){
+							$(".contact").each(function(i){//for each contact in the container >> added for easier addition of extra contacts
 								setTimeout(function(){
-									$(".contact").eq(i).addClass('zoom-out');
-								},300*i);
+									$(".contact").eq(i).addClass('zoom-out');// a simple zoom out animation when in view
+								},100*i);//progression with a difference of 300ms
 							});
 
 
 
 
-					}
+					}*/
 
-					if(parscr > $(".sector-event").offset().top - $(window).height()/2)
+					if(parscr > $(".event-section").offset().top - $(window).height()/2)
 					{
 
 
@@ -181,7 +154,7 @@ var modalOpened=0;
 
 					}
 
-					if(parscr > $(".event-head-sector").offset().top - $(window).height()/2)
+					/*if(parscr > $(".event-head-sector").offset().top - $(window).height()/2)
 					{
 
 
@@ -194,115 +167,168 @@ var modalOpened=0;
 
 
 
-					}
-
-
-
-
-
-
-
-
-
-
+					}*/
 
 
 			});
 
+			$("#header").load(function() {
+				$this.animate({
+					"height": "=90vh",
+					},
+					2000, function() {
 
-			var down=1;
-			var ck=1;
-			var interval;
-			var count=1;
-			var max=$(".pslide > span").length-1;//gets the max number of images to slide through
-			var slideWidth=$(".slider").width();//gets the width of the image slider
-			$(".pslide > span >img").width(slideWidth);//sets the width of the image slider to the width of the container
-			//console.log(slideWidth);
+				});
+			});
 
-		function check_count()//function to check if the slider box has reached the end or not general slide stoppages may be performed here
-		{
-			ck++;//incrementing the slide counter
-			if(ck == max)//when count reaches the max number of preset slides
+
+		//material design button click animation ie,ripple effect
+		$(".material-button").click(function(e){
+	 var parentOffset = $(this).offset();//get the offset of the parent of the material layer from the window
+	 var $layer = $('<div/>');//define a new div
+	 $layer.addClass("material-layer");// add the material-layer class to the div
+	 var relX = e.pageX - parentOffset.left;//page click x - offset of the button(x)
+	 var relY = e.pageY - parentOffset.top;//page click y - offset of the button(y)
+	 $layer.css({
+		 "left":relX,
+		 "top":relY,
+	 });//assign the respective offset x y coords for the element
+
+	 $layer.appendTo($(this));//append the created div to the button
+	 $layer.show();//show the element
+	 $layer.addClass("animate");//animate the element
+
+	 setTimeout(function(){
+	 $layer.remove();//remove after 2 seconds
+
+	 },2000);
+
+
+
+});
+
+
+
+
+		$(".chevron-right").click(function(e) {
+
+
+
+			var movement = (cardWidth + cardPadding);
+			console.log(cardCount);
+			if(cardCount < maxcards-1)
 			{
-				$('.loading').fadeOut(1000);//fades out the loading screen if failed to do so previously
-				/*interval=setInterval(function(){//interval that changes the slide every three seconds
-					//moveslide();calls a function that performs the actual traversing of slides
-					if(slideWidth != $(".slider").width())//additional function that checks if the width of the slide window has been changed.
-					{
-						slideWidth=$(".slider").width();//if changed, get the new width of the element
-						$(".pslide > span >img").width(slideWidth);//set the new width as the actual width
-						$('.loading').fadeIn(1000);//show the loading screen again as one full execution of the slide sequence must be completed to sync
-													//slide positions even though individual image widths have changed[ not the most effecient way needs change ?]
-						$('.loading').delay(5000).fadeOut(1000);
-					}
+				console.log("yes");
+				$(".event-slide-container").animate({
+					marginLeft: "-="+movement+"px"
+					},
+					100, function() {
+					cardCount ++;
 
-				},3000);*/
+				});
 
 			}
-
-
-		}
-
-		function calculate_slide_movement(scroll)
-		{
-			var x,y,k;
-			x=$("#scontainer").height();
-			y=$("#scontainer").width();
-			k=x/y;
-			var amt=k*scroll;
-			moveslides(amt);
-
-		}
-
-		function moveslides(amount)
-		{
-			$('.pslide').animate({marginLeft:"-="+amount+"px"},100);
-		}
-		function moveslide(amount)
-		{
-
-			if(count == max+1)
-			{
-				$('.pslide').animate({marginLeft:'0px'},1000); // margin left  0 is the default position of the first slide consequent slides are the n x the width of the slide.
-				count=1;//setting the count back to the initial to make the slides start from thier initial state
-			}
-
 			else
 			{
-				$('.pslide').animate({marginLeft:"-="+slideWidth+"px"},1000);//incrementing the margin by slidewidth which has been set previously
-				count++;//incrementing the value of count
+				console.log("no");
+				$(".event-slide-container").animate({
+					marginLeft: "0px"
+					},
+					100, function() {
+					cardCount =1;
+				});
+			}
+		});
+			$(".chevron-left").click(function(e) {
+
+
+
+			var movement = (cardWidth + cardPadding);
+			console.log(cardCount);
+			if(cardCount > 1)
+			{
+
+				$(".event-slide-container").animate({
+					marginLeft: "+="+movement+"px"
+					},
+					100, function() {
+					cardCount --;
+
+				});
+
 			}
 
 
-		}
 
-		
-		var animStart = 0;
-		 $(".material-button").click(function(e){
 
-		 		if(animStart == 0)
-		 		{
-		 			animStart=1;
-		 			 var parentOffset = $(this).offset();
-		               var $layer = $(this).find(".material-layer");
-		               //or $(this).offset(); if you really just want the current element's offset
-		               var relX = e.pageX - parentOffset.left;
-		               var relY = e.pageY - parentOffset.top;
 
-		               $layer.css({
-		                 "left":relX,
-		                 "top":relY,
-		               });
-		            $layer.addClass("animate");
-		              setTimeout(function(){
-		                  $layer.removeClass("animate");
-		                  animStart=0;
-		              },500);
-		 		}
-              
+
+
+
+		});
+
+		$(".event-slide-container").swipe({
+		  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+		   	var movement = (cardWidth + cardPadding);
+			console.log(cardCount);
+			if(cardCount < maxcards-1)
+			{
+				console.log("yes");
+				$(".event-slide-container").animate({
+					marginLeft: "-="+movement+"px"
+					},
+					100, function() {
+					cardCount ++;
+
+				});
+
+			}
+
+		  }
+
+		});
+
+		$(".event-slide-container").swipe({
+		  swipeRight:function(event, direction, distance, duration, fingerCount) {
+		   	var movement = (cardWidth + cardPadding);
+			console.log(cardCount);
+			if(cardCount > 1)
+			{
+				console.log("yes");
+				$(".event-slide-container").animate({
+					marginLeft: "+="+movement+"px"
+					},
+					100, function() {
+					cardCount --;
+
+				});
+
+			}
+
+		  }
+
+		});
+
+
+
+		var flip = false;
+
+		 $(".icon-ham").click(function(e){
+		 	if(flip)
+		 	{
+		 		$mainNav.find('nav').css('display','none');
+		 		flip=false;
+		 	}
+		 	else
+		 	{
+		 		$mainNav.find('nav').css('display','flex');
+		 		flip=true;
+		 	}
+
+
+
 
           });
-
 			$( ".video-sector").find('figure').hover(function(){
 				$(this).find('figcaption').removeClass("shown-play-icon");
  				$(this).find('figcaption').addClass("show-play-icon");
@@ -321,38 +347,7 @@ var modalOpened=0;
 
 
 		}
-		function checkaccount()
-		{
-			var pwtext = $('#password').val();
-			var xhtp= new XMLHttpRequest();
 
-			xhtp.onreadystatechange=function(){
-				if(xhtp.readyState == 4 && xhtp.status == 200)
-				{
-					if(xhtp.responseText == "t")
-					{
-
-
-						$(".page-cover").hide();
-
-
-					}
-					else
-					{
-
-						$(".page-cover").css({
-							background:"red"
-						});
-
-					}
-				}
-
-
-			}
-			xhtp.open("POST","login.php",true);
-			xhtp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-			xhtp.send("&password="+pwtext);
-		}
 
 		function close_modal()
 		{

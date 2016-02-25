@@ -9,7 +9,15 @@ padding:0px;
 font-family:'Roboto',sans-serif;}
 
 
-
+ #error
+ {
+ 	background:rgba(255,0,0,0.5);
+ 	padding:20px;
+ 	width:100%;
+ 	color:white;
+ 	font-weight:300;
+ 	font-family: 'Roboto',sans-serif;
+ }
 header
 {
 	/*background:url('../images/background.jpg');*/

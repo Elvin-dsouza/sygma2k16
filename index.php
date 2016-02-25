@@ -1,6 +1,5 @@
 <!doctype html>
 <?php
-
 	session_start();
 ?>
 <html>
@@ -15,108 +14,332 @@
 						Sygma Provides a whole host of events ranging from Technical to Communicational Events.">
 		<meta name="keywords" content="SDM,Fest,sygma,sygma 2016, SDM mangalore, mangalore IT fest">
 		<meta name="theme-color" content="#607D8B">
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
+
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500italic,500,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<script src="js/swipe.js"></script>
+		<!--[if lt IE 9]>
+		<script src="dist/html5shiv.js"></script>
+		<![endif]-->
+
 	</head>
 	<body>
 		<?php require "inline-svg.php";?>
-		<div class="page-flow" style="display:none" >
-
-			<div class="modal">
-				<svg class="icon_close_modal" onclick="close_modal();"><use xlink:href="#icon-cancel"></use></svg>
-				<form action="register.php" method="post" style="border-right:1px solid darkgrey;">
-					<h2 style="color:#333; font-family:'roboto';">Registration Form</h2>
-					<p style="color:#333; font-family:'roboto';">Dont have an account?,Register now</p>
-						<input type="text" name="name" placeholder="full name" class="text-bx" required>
-						<input type="email" name="email" placeholder="someone@something.com" class="text-bx" required>
-						<input type="password" name="password" placeholder="password" class="text-bx" required>
-						<input type="password" name="cpassword" placeholder="confirm password" class="text-bx" required>
-						<input type="submit" value="Send" class="register">
-					</form>
-
-				<form action="login.php" method="post">
-					<h2 style="color:#333; font-family:'roboto';">Login/Registration Form</h2>
-						<input type="email" name="email" placeholder="someone@something.com" class="text-bx" required>
-						<input type="password" name="password" placeholder="password" class="text-bx" required>
-						<input type="submit" value="Login" class="register"><br><br>
-
-
-				</form>
-			</div>
-		</div>
-
-
-		<div class="page-cover" style="display:none"></div>
 
 
 		<header>
 
-			<span class="material-layer" style="display:none">
-			</span>
+			<video autoplay muted loop  id="bgvid">
+
+			    <source src="images/video.mp4" type="video/mp4">
+			</video>
 			<article id="heading-area">
-				<figure><img src="images/logo.png" alt="SDMCBM" /></figure>
-				<h1>Sygma 2016</h1>
-				<p>A State Level IT Fest</p>
+				<figure><img src="images/logo.svg" alt="SDMCBM" /></figure>
+				<!--<h1>Sygma 2016</h1>
+				<p>A State Level IT Fest</p>-->
 				<nav id="nav-icons"><svg class="icon-arrow" onclick="scrollhere();"><use xlink:href="#icon-arrow_drop_down"></use></svg></nav>
 			</article>
 			<nav id="social-bar">
-				<svg class="icon-social" id="icon-fb"><use xlink:href="#icon-facebook3"></use></svg>
-				<svg class="icon-social" id="icon-yt"><use xlink:href="#icon-youtube3"></use></svg>
-				<svg class="icon-social" id="icon-tw"><use xlink:href="#icon-tumblr"></use></svg>
+				<a href="https://www.facebook.com/sygma16/"><svg class="icon-social" id="icon-fb"><use xlink:href="#icon-facebook3"></use></svg></a>
+				<a href="https://www.youtube.com/channel/UCdH8ON25LtlypHJeljkGsAw"><svg class="icon-social" id="icon-yt"><use xlink:href="#icon-youtube3"></use></svg></a>
+				<a href="https://twitter.com/sygma16"><svg class="icon-social" id="icon-tw"><use xlink:href="#icon-twitter"></use></svg></a>
+				<svg class="icon-social" id="icon-tw"><use xlink:href="#icon-google-plus3"></use></svg>
 			</nav>
-		</header><!--[End of Header] -->
+
+		</header>
+
+		<!--[End of Header] -->
 		<!--[Start of Main Content Wrapper] -->
+		<div class="modal" id="rules-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<h3>Rules and Regulations</h3>
+				<p class="desc">
+
+
+					<ul>
+					<li>  The fest is open to under graduate students</li>
+					<li>  The Entry Fee is Rs 250 per college</li>
+					<li>  Do  Confirm your participation via phone or email at the earliest</li>
+					<li>  One team from each college can register</li>
+					<li>  Each team should have 12  participants and no participant can participate
+					     in more than  one event</li>
+					<li>  Teams should report at the registration counter before 8:30 am</li>
+					<li>  All participants must carry their college ID cards and present an
+					     authorization letter from their principal at the time of registration</li>
+					<li>  Judges decision will be final and binding by all regards</li>
+					<li>  Punctuality and descipline are of primary concern</li>
+					<li>  Indecency/vulgarity or any kind of objectinable behaviour by any students
+					     will not be tolerated</li>
+ 					</ul>
+
+
+					</p>
+			</article>
+		</div>
+		<div class="modal" id="codenet-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<img src="images/codenet.png" alt="SDMCBM" style="width:150px; height:150px; margin:0 auto;"  />
+				<h3>Code Net</h3>
+				<p>Web design Event</p>
+				<p class="desc">
+					Code net is an event that is designed to test the
+					skills of web designers, participants will be
+					provided with fun, as well as competitive
+					challenges that will showcase design skills and
+					their ability to come up with the best solution to a
+					problem in the shortest amount of time.
+					<ul>
+						<b>Requirements</b>
+						<li>  HTML And CSS</li>
+
+						<li>1 participant per college</li>
+ 					</ul>
+					<ul>
+						<h5>Contact</h5>
+						<li>Elvin Dsouza : +91 9591349482</li>
+						<li>Samanth Kumar: +91 8197420742</li>
+ 					</ul>
+
+					</p>
+			</article>
+		</div>
+		<div class="modal" id="codeinsight-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<img src="images/code.png" alt="SDMCBM" style="width:200px; height:150px; margin:0 auto;"  />
+				<h3>Code Insight</h3>
+				<p>coding and debugging event</p>
+				<p class="desc">
+					Code Insight clearly points about the vision that the
+					programmer should have before developing solution to a
+					problem.The event test the logic and the ability of the
+					programmer. As mentioned each program is developed for
+					a problem and need a logical solution.
+					<ul>
+						<h5>Requirements</h5>
+						<li>C++ and C</li>
+						<li>2 participant's per college</li>
+ 					</ul>
+
+ 					<ul>
+						<h5>Contact</h5>
+						<li>Deepak R.S : +91 7022090569</li>
+						<li>Sawan Kumar: +91 9743254874</li>
+ 					</ul>
+
+
+					</p>
+			</article>
+		</div>
+		<div class="modal" id="revolution-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<img src="images/bm.png" alt="SDMCBM" style="width:200px; height:150px; margin:0 auto;"  />
+				<h3>Revolutionary Entrepreneur</h3>
+				<p>Best Manager Event</p>
+				<p class="desc">
+					Revolutionary Entrepreneur is an IT best manager event
+					which helps a candidate in developing personal growth
+					opportunities.It helps in gaining professional and technical
+					knowledge.It guides an individual towards inculcating
+					professional skills.
+					<ul>
+						<h5>Requirements: N/A</h5>
+						<li>1 participant per college</li>
+						 					</ul>
+
+ 					<ul>
+						<h5>Contact</h5>
+						<li>Akarsh Naveen : +91 9845258282</li>
+						<li>Sushmitha Kini: +91 9591767035</li>
+ 					</ul>
+
+
+					</p>
+			</article>
+		</div>
+		<div class="modal" id="quiz-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<img src="images/tek.png" alt="SDMCBM" style="width:200px; height:150px; margin:0 auto;"  />
+				<h3>Teknowit</h3>
+				<p>IT Quiz Event</p>
+				<p class="desc">
+					We are All quizzers! Fire up your grey matter. Teknowit
+					is an IT quiz  competition this event appraises the
+					partakers knowhow about technology.
+					<ul>
+						<li>Requirements: N/A</li>
+						<li>2 participant's per college</li>
+					</ul>
+
+ 					<ul>
+
+
+						<h5>Contact</h5>
+							<li></li>
+							<li>R.K Nikash	      +91 8971149725</li>
+							<li>Aishwarya K.V     +91 8593064232</li>
+
+ 					</ul>
+
+
+					</p>
+			</article>
+		</div>
+
+		<div class="modal" id="debate-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<img src="images/debate.jpg" alt="SDMCBM" style="width:200px; height:150px; margin:0 auto;"  />
+				<h3>Debatabase</h3>
+				<p>IT Ad and Debate Event</p>
+				<p class="desc">
+					IT Debate  and Advertisement event focuses on
+					Arguement and the ability to convince verbally
+					<ul>
+						<li>Requirements: N/A</li>
+						<li>2 participant's per college</li>
+					</ul>
+
+ 					<ul>
+
+
+						<h5>Contact</h5>
+							<li></li>
+							<li>Steven Dsouza	   +91 8553810383</li>
+							<li>Monisha A.G        +91 9972657102</li>
+
+ 					</ul>
+
+
+					</p>
+			</article>
+		</div>
+		<div class="modal" id="client-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<img src="images/clyens.png" alt="SDMCBM" style="width:200px; height:150px; margin:0 auto;"  />
+				<h3>Clyens Necto</h3>
+				<p>Client Connect</p>
+				<p class="desc">
+					This event is about proving participants abilities
+					in managing business relations.
+					<ul>
+						<li>Requirements: N/A</li>
+						<li>1 participant's per college</li>
+					</ul>
+
+ 					<ul>
+
+
+						<h5>Contact</h5>
+							<li></li>
+							<li>Nidha Nausheen	+91 9611547030</li>
+							<li>Kawyashree      +91 8105189436</li>
+
+ 					</ul>
+
+
+					</p>
+			</article>
+		</div>
+		<div class="modal" id="dflash-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<img src="images/flash.jpg" alt="SDMCBM" style="width:200px; height:150px; margin:0 auto;"  />
+				<h3>D-Flash</h3>
+				<p>E-News Event</p>
+				<p class="desc">
+					This is an E-news event that focuses on showcasing
+					the people’s talents by means of Digital
+					Communication.
+					<ul>
+						<li>Requirements: Camera's and Laptops</li>
+						<li>1 participant's per college</li>
+					</ul>
+
+ 					<ul>
+
+
+						<h5>Contact</h5>
+							<li></li>
+							<li>Mayur Nayak	    +91 7204958725</li>
+							<li>Durgashree      +91 7204734392</li>
+
+ 					</ul>
+
+
+					</p>
+			</article>
+		</div>
+
+		<div class="modal" id="smartscav-modal" style="display:none">
+			<svg class="icon_close_modal" onclick="$(this).parent().hide();"><use xlink:href="#icon-clear"></use></svg>
+			<article>
+				<img src="images/scav.png" alt="SDMCBM" style="width:200px; height:150px; margin:0 auto;"  />
+				<h3>Smart Scavenger</h3>
+				<p>Treasure Hunt Event</p>
+				<p class="desc">
+					Smart scavenger is an information based treasure hunt in
+					in which teams use their collective brain power to solve clues
+					which teams must solve in order to find place of information.
+					<ul>
+						<li>Requirements: Smart phone (mandatory)</li>
+						<li>2 participant's per college</li>
+					</ul>
+
+ 					<ul>
+						<h5>Contact</h5>
+							<li>Deeksha Rai	    +91 9901661064</li>
+							<li>Sharafath       +91 9740122324</li>
+							<li>Ibrahim 	    +91 8050131357</li>
+							<li>Pavan Kumar     +91 9538973959</li>
+ 					</ul>
+
+
+					</p>
+			</article>
+		</div>
 		<section class="main-nav">
+			<svg class="icon-ham" id="icon-fb"><use xlink:href="#icon-menu"></use></svg>
 			<nav>
-				<a  onclick="scrollnav('#sector');">ABOUT</a>
-				<a  onclick="scrollnav('.video-sector');">VIDEO</a>
-				<a  onclick="scrollnav('.sector-event');">EVENT</a>
-				<a  onclick="scrollnav('.contacts');">CONTACTS</a>
-				<a  onclick="scrollnav('.event-head-sector');">TEAM</a>
+				<a  id= "nav-about-button" onclick="scrollnav('#sector');">About</a>
+				<a  id= "nav-video-button"onclick="scrollnav('.video-sector');">Video</a>
+				<a  id= "nav-theme-button"onclick="scrollnav('.theme-showcase');">Theme</a>
+				<a  id= "nav-event-button"onclick="scrollnav('.event-section');">Events</a>
+				<a  id= "nav-contact-button"onclick="scrollnav('.event-head-section');">Team</a>
 			</nav>
-			
 		</section>
-		<section id="content" >
-
-
+		<section id="content">
 			<section id="sector" class="column">
 				<article id="article-desc">
-					<h3>Welcome To Sygma</h3>
+					<h3>SYGMA 2016<br/>A State Level IT Fest</h3>
 					<p class="desc">
-						Sygma is a state level IT fest organised by Shri Dharmasthala Manjunatheshwara college of business management Mangalore
-						to provide a platform for budding IT professionals and technology enthusiasts to gain real world experience and showcase thier various talents
-						Sygma Provides a whole host of events ranging from technical to communicational events.
+						One of the leading business management colleges in Mangaluru,NAAC re-accredited with 'A' grade, affiliated to Mangalore University,
+						pioneer in Management education of  undergraduate level established and managed under the patronage of Shri Dharmasthala Manjunatheshwara Education Society,
+						Ujire (D.K).  The institution focuses on preparing students to face the global business challenges.
+						SYGMA is a state level IT fest organised by Shri Dharmasthala Manjunatheshwara college of business management Mangalore
+						to provide a platform for budding IT professionals and technology enthusiasts to gain real world experience and showcase thier skills.
 					</p>
-					<span><figure><img id="profile"src="images/pp.jpg" alt="SDMCBM" /></figure><p>Shivaprasad V Bhat,<br/>SYGMA CEO 2k16</p></span>
+
 				</article>
 				</article>
 			</section>
-
-			<!--<section id="theme-showcase">
-					<figure><img id="theme-pic"src="http://lorempixel.com/400/350/" alt="SDMCBM" /></figure>
-					<article id="theme">
-						<h3>Digital Revolution</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</article>
-			</section>-->
-
-
-
 			<section id="sector2">
 				<article id="article-grid">
 					<div id="grid-row">
 						<div id="grid-item" class="item-info">
-							<div class="material-overlay">
-							</div>
+
 							<!--img src="images/ed.jpg" alt="SDMCBM" />-->
 							<svg class="icon"><use xlink:href="#icon-location_city"></use></svg>
 							<article>
-									<h3>VENUE</h3>
+									<h3>Venue</h3>
 									<p>Shri Dharmasthala Manjunatheshwara College Mangalore</p>
 							</article>
 						</div>
@@ -124,17 +347,17 @@
 							<svg class="icon" ><use xlink:href="#icon-schedule"></use></svg>
 							<!--<img src="images/clk.jpg" alt="SDMCBM" />-->
 							<article>
-									<h3>DATE/TIME</h3>
-									<p><time>January 23rd 2016, 8:00 AM</time>
-										<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=SYGMA%20016&dates=20160123T010000Z/20160123T020000Z&details=State%20Level%20IT%20Fest%20Organised%20By%20SDM%20College%20Mangalore">.</a>
-									</p>
+									<h3>Date/Time</h3>
+									<p><time>January 23rd 2016, 9:00 AM</time>
+										<!--<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=SYGMA%20016&dates=20160123T010000Z/20160123T020000Z&details=State%20Level%20IT%20Fest%20Organised%20By%20SDM%20College%20Mangalore"> > </a>
+									--></p>
 							</article>
 						</div>
-						<div id="grid-item" class="item-info">
+						<div id="grid-item" class="item-info" onclick="$('#rules-modal').show();" >
 							<svg class="icon" ><use xlink:href="#icon-local_library"></use></svg>
-							<!--<img src="images/rg.png" alt="SDMCBM" />-->
+
 							<article>
-									<h3>RULES</h3>
+									<h3>Rules</h3>
 									<p>Click to Learn more</p>
 							</article>
 						</div>
@@ -144,211 +367,130 @@
 
 				<section class="video-sector">
 					<article>
-					<h3 style="font-weight:300">Get a Taste of What makes sygma Amazing..</h3>
+					<h3 style="font-weight:300; margin-top:10vh;">Get a Taste of What makes sygma Amazing..</h3>
 
 
-				</article>
-				<section>
-				<figure class="offset-b">
-					<img src="http://lorempixel.com/400/200/" alt="SDMCBM" />
-					<figcaption class="shown-play-icon"><svg class="icon-play" onclick="scrollhere();"><use xlink:href="#icon-play_circle_filled"></use></svg><p>welcome to Sygma</p></figcaption>
-				</figure>
-				<figure class="middle">
-					<img src="http://lorempixel.com/400/400/" alt="SDMCBM" />
-					<figcaption class="shown-play-icon"><svg class="icon-play" onclick="scrollhere();"><use xlink:href="#icon-play_circle_filled"></use></svg><p>promo</p></figcaption>
-				</figure>
-				<figure class="offset-a">
-					<img src="http://lorempixel.com/400/200/" alt="SDMCBM" />
-					<figcaption class="shown-play-icon"><svg class="icon-play" onclick="scrollhere();"><use xlink:href="#icon-play_circle_filled"></use></svg><p>First Look</p></figcaption>
-				</figure>
+					</article>
+					<section class="video-container">
+						<figure class="offset-b">
+							<img src="https://placeimg.com/640/480/tech" alt="SDMCBM" />
+							<figcaption class="shown-play-icon"><svg class="icon-play" onclick="scrollhere();"><use xlink:href="#icon-play_circle_filled"></use></svg><p>welcome to Sygma</p></figcaption>
+						</figure>
+						<figure class="middle">
+							<img src="https://placeimg.com/640/480/tech" alt="SDMCBM" />
+							<figcaption class="shown-play-icon"><svg class="icon-play" onclick="scrollhere();"><use xlink:href="#icon-play_circle_filled"></use></svg><p>promo</p></figcaption>
+						</figure>
+						<figure class="offset-a">
+							<img src="http://img.youtube.com/vi/_6jKeqfB6O4/0.jpg" style="width:300px; height:250px;" alt="SDMCBM" />
+							<figcaption class="shown-play-icon"><a style="color:white" href="https://www.youtube.com/watch?v=_6jKeqfB6O4"><svg class="icon-play" onclick="scrollhere();"><use xlink:href="#icon-play_circle_filled"></use></svg><p>First Look</p></a></figcaption>
+						</figure>
+
+					</section>
+					<section><a href="https://www.youtube.com/channel/UCdH8ON25LtlypHJeljkGsAw"><div class="material-button raised  " style="width:200px;font-size:20px;padding:20px;"><div class="material-layer light" style="width:10px; height:10px; border-radius:50%;"></div>Follow on Youtube</div></a></section>
+				</section>
+		<section class="theme-showcase-sector">
+
+			<section class="theme-showcase">
+					<article><h3>Digital Renaissance</h3>
+					<p style="  padding-top:10px; max-width:80%; margin:0 auto; ">A Revolution Towards Digital india</p>
+					<p style="  padding-top:10px; max-width:80%; margin:0 auto; ">
+
+					Renaissance in the 15th and 16th centuries was the
+					result of the introduction of the machines and implementation of techniques
+					of mass production Similarly the modern world is on the cusp of digital revolution,
+					digitalisation is going to lift millions of people out of poverty through employment
+					creation and through dissemination of knowledge.The present world is
+					undergoing a digital renaissance or a digital rebirth.We see it around us,
+					we see the influence of digital technologies in all the phases of our life. So to
+					highlight the digitalisation of the world, we chose the theme of digital renaissance
+					for sygma 2016</p>
+					</article>
 			</section>
-
-			<article>
-
-					<p>Follow us on youtube to get to know sygma and its amazing team.
-
-					</p>
-
-				</article>
 		</section>
-		<section class="sector-event">
-
-				<article class="card-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /><h3>Coding and Debugging</h3><p>For Code Geeks and Debuggers</p><div class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
-				<article class="card-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /><h3>Best Manager</h3><p>People with great personalities rise high, can you rise higher</p><div class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
-				<article class="card-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /><h3>Web Designing</h3><p>Creativity Inginuity and Flexibilty, Can you master them all?</p><div class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
-				<article class="card-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /><h3>Treasure Hunt</h3><p>Think on your feet, Each decision may affect your outcome</p><div class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
-				<article class="card-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /><h3>IT Quiz</h3><p>Event Description</p><div class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
-				<article class="card-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /><h3>IT Debate</h3><p>Event Description</p><div class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
-				<article class="card-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /><h3>E-News</h3><p>Event Description</p><div class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
-				<article class="card-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /><h3>Klyent Konnect</h3><p>Event Description</p><div class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
-
+		<section class="event-section">
+			<article><h2>Exciting Events Designed to Challenge even the most experienced Professionals</h2></article>
+			<section class="event-slider">
+				<span><svg class="chevron-left" id="btnarrow"><use xlink:href="#icon-chevron_right"></use></svg><svg class="chevron-right facing-right" id="btnarrow"><use xlink:href="#icon-chevron_right"></use></svg></span>
+				<section class="event-slide-container">
+					<article class="card-art">	<img src="images/code.png"  style="width:90%; margin:0 auto;" alt="SDMCBM" /><h3>Code Insight</h3><p><br/>For Code Geeks and Debuggers</p><div class="material-button flat" onclick="$('#codeinsight-modal').show();"><div class="material-layer dark"></div>LEARN MORE</div></article>
+					<article class="card-art">	<img src="images/bm.png" style="width:55%; margin:0 auto;" alt="SDMCBM" /><h3>Revolutionary Entrepeneur</h3><p>People with great personalities rise high, can you rise higher</p><div onclick="$('#revolution-modal').show();"class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
+					<article class="card-art">	<img src="images/codenet.png" alt="SDMCBM" style="width:60%; margin:0 auto;"  /><h3>Codenet</h3><p>Creativity Inginuity and Flexibilty, Can you master them all?</p><div onclick="$('#codenet-modal').show();"class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
+					<article class="card-art">	<img src="images/scav.png" alt="SDMCBM" /><h3>Smart Scavenger</h3><p>Think on your feet, Each decision may affect your outcome</p><div onclick="$('#smartscav-modal').show();" class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
+					<article class="card-art">	<img  src="images/tek.png" alt="SDMCBM"style="width:80%; margin:0 auto;" /><h3>Technowit</h3><p><br/>We all are Quizzers! Fire up your grey matter. </p><div onclick="$('#quiz-modal').show();"class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
+					<article class="card-art">	<img src="images/debate.jpg" alt="SDMCBM" /><h3>IT Debatabase</h3><p><br/>"The Platform for masters of logic and debate. Great debaters can talk thier way out of any scenario.</p><div onclick="$('#debate-modal').show();" class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
+					<article class="card-art">	<img src="images/flash.jpg" alt="SDMCBM" /><h3>D-Flash</h3><p><br/> E-news event that focuses on showcasing
+					the people’s talents by means of Digital
+					Communication.</p><div onclick="$('#dflash-modal').show();"class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
+					<article class="card-art">	<img src="images/clyens.png" alt="SDMCBM"  /><h3>Clyens Necto</h3><p><br/>This event is about proving participants abilities
+					in managing business relations.</p><div onclick="$('#client-modal').show();"class="material-button flat"><div class="material-layer dark"></div>LEARN MORE</div></article>
+				</section>
+			</section>
 		</section>
 
 
 
+<section class="contact-section">
+			<div class="contact-container">
+				<h2>Get in touch...</h2>
+				<section>
+					<aside>
+						<img style="border:5px solid white;"src="images/map.png" alt="map">
+						<a href="http://maps.google.co.in" style="margin:0px; display:block; width:auto;"><div class="material-button raised  " style="width:200px; margin-top:15px; font-size:20px; padding:20px;  margin-right:0px; margin-left:0px;" ><div class="material-layer light" style="width:10px; height:10px; border-radius:50%;"></div>View on Maps</div></a>
+					</aside>
+					<section>
+						<article class="contact-info" style="margin-top:50px;align-items:center;justify-content:center;">
+							<img style="margin:0 auto;border:5px solid white;"src="images/pp.jpg"/>
+							<p>Shivaprasad V Bhat<br/>
+							CEO Sygma<br/>
+							Ph:+91 87470 68496<br/></p>
+						</article>
 
-			<section class="contact-info" >
-
-				<section class="map-box">
-					<div class="map-disable" onclick="$(this).hide();"></div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.439402703426!2d74.84134549999996!3d12.879442949999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a44fb709daf%3A0xc4d2eaffb58ea704!2sSDM+College!5e0!3m2!1sen!2sin!4v1436857039173" width="600" height="450" frameborder="0" style="border:0;width:100%;min-height:300px" allowfullscreen></iframe>
-
+					</section>
 				</section>
 
-				<div class="map-overlay">
-					<section class="contacts">
-						<article class="contact">
-							<figure><img src="images/pp.jpg" alt="CEO"/></figure>
-							<span><h4>Shivaprasad V Bhat</h4>
-							<p>CEO OF Sygma</p>
-							</span>
-						</article>
-						<article class="contact">
-							<figure><img src="images/r.jpg" alt="staff coordinator"/></figure>
-							<span><h4>Reshmi B.R </h4>
-							<p>Lecturer incharge</p>
-							</span>
-						</article>
-						<article class="contact">
-							<figure><img src="images/dp.jpg" alt="staff coordinator"/></figure>
-							<span><h4>Deepa Hegde</h4>
-							<p>Lecturer incharge</p>
-							</span>
-						</article>
-					</section>
-					<section class="event-head-sector">
-						<article>
 
-								<p>Dedicated to the Team that makes things possible. <br/>And the Participants who make it worthwhile.
-								</p>
-							</article>
-							<section>
-							<figure class="team-art">	<img src="https://scontent.fmaa1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11745627_1450250495300373_8743351366501760412_n.jpg?oh=9dca099ce5efb802b8a4e5e465166feb&oe=569362A9" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="https://scontent.fmaa1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11102734_813194178771600_356870935566296144_n.jpg?oh=406e96fc8d161f348ab10a67ae475bfd&oe=569A4B8B" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="https://scontent.fmaa1-1.fna.fbcdn.net/hprofile-xta1/v/t1.0-1/p160x160/12003219_572766289528346_3478638705072004020_n.jpg?oh=df2bc7e74bfa3fb6dccbd71317b2d938&oe=56A55FE3" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="https://scontent.fmaa1-1.fna.fbcdn.net/hprofile-xtf1/v/t1.0-1/p160x160/11193217_879314848806424_7226755982859354639_n.jpg?oh=ae26d82cc300ddae793b24dd69cd54e7&oe=569FDA5E" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="https://scontent.fmaa1-1.fna.fbcdn.net/hprofile-xlp1/v/t1.0-1/p160x160/12063536_845433788858369_6356066837490405677_n.jpg?oh=f8a1542f89acd5a344d5f54a13c70d1d&oe=56A164F3" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="https://scontent.fmaa1-1.fna.fbcdn.net/hprofile-xfp1/v/t1.0-1/p160x160/10978481_1034909776521351_5130948455653869298_n.jpg?oh=73b05c30c4ca489c43c2b2647cbb67f5&oe=565E7B69" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="https://lh6.googleusercontent.com/-4O-6uaKGqzU/VhEd3CqXqcI/AAAAAAAABDs/heBPI3lot84/s529-no/1129c4cf-4801-4de0-a119-38887c9b5403" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-							<figure class="team-art">	<img src="http://lorempixel.com/400/200/" alt="SDMCBM" /></figure>
-						</section>
-					</section>
-				</div>
+			</div>
+</section>
+		<footer>
+
+
+			<section>
+				<article>
+
+					<h3>SYGMA 2016</h3>
+					<p>SDM College of Business Management Mangalore</p>
+					<p>Email: sygma@sdm.ac.in</p>
+					<p>Ph:0824 2424186</p>
+					<a href="http://sdm.ac.in"><div class="material-button raised" style="width:70px"><div class="material-layer light"></div>Visit Website</div></a>
+				</article>
+				<aside>
+					<h3>FOLLOW SYGMA</h3>
+					<nav>
+						<a href="https://www.facebook.com/sygma16/">Facebook</a>
+						<a href="https://twitter.com/sygma16">Twitter</a>
+						<a href="https://www.youtube.com/channel/UCdH8ON25LtlypHJeljkGsAw">Youtube</a>
+						<a href="#">Google Plus</a>
+
+				</aside>
+				<aside>
+					<h3>LINKS</h3>
+					<nav>
+
+						<a href="#">Online Registeration</a>
+						<a href="#">Videos</a>
+						<a href="#">About</a>
+						<a href="#">Contact</a>
+						<a href="admin/admin.php">Admin Login</a>
+						<a href="admin/manage.php">Administration Tools</a>
+						<a href="#">Back to Top</a>
+					</nav>
+				</aside>
 			</section>
 
-
-		</section>
-		<!--[End of Main Content Wrapper] -->
-		<footer>
-			<section>
-			<article>
-
-				<h3>SYGMA 2016</h3>
-				<p>SDM College of Business Management Mangalore</p>
-				<p>Email: sygma@sdm.ac.in</p>
-				<p>Ph:2398342324</p>
-				<div class="material-button raised" style="width:70px"><div class="material-layer light"></div>Visit Website</div>
-			</article>
-			<aside>
-			<h3>FOLLOW SYGMA</h3>
-			<nav>
-				<a href="#">Facebook</a>
-				<a href="#">Twitter</a>
-				<a href="#">Youtube</a>
-				<a href="#">Google Plus</a>
-
-		</aside>
-				<aside>
-				<h3>LINKS</h3>
-				<nav>
-					<a href="#">Online Registeration</a>
-					<a href="#">Videos</a>
-					<a href="#">About</a>
-					<a href="#">Contact</a>
-					<a  onclick="open_modal();" href="#">Admin Login</a>
-					<a href="#">Administration Tools</a>
-					<a href="#">Back to Top</a>
-			</aside></section>
-
-
-
 		</footer>
-			<script src='js/script.js'></script>
-
-			
-
-
-
-
-	
-
+		<script src='js/script.js'></script>
 
 
 
 	</body>
 </html>
-<!--<section class="sector-info" class="column">
-				<article>
-					<h3 style="font-weight:300">Innovation at its best..</h3>
-					<p>At Sygma we Strive to innovate and encourage creativity and discovery at every level,We believe innovation is the most important personal goals
-					</p>
-				</article>
-				<center><button class="frame">Register Online</button></center>
-			</section>
-
-			-->
-			<!---->
-			<!-- Header Section Start -->
-		<!--<div class="side-bar">
-			<div class="cover-photo">
-			</div>
-			<nav>
-				<a href="#"><svg class="icon-nav"><use xlink:href="#icon-home"></use></svg><p>Home</p></a>
-				<a href="#"><svg class="icon-nav"><use xlink:href="#icon-search"></use></svg><p>Search</p></a>
-				<a href="#"><svg class="icon-nav"><use xlink:href="#icon-user"></use></svg><p>Profile</p></a>
-				<a href="#"><svg class="icon-nav"><use xlink:href="#icon-info"></use></svg><p>About</p></a>
-				<a href="#"><svg class="icon-nav"><use xlink:href="#icon-cogs"></use></svg><p>Settings</p></a>
-				<a href="#"><svg class="icon-nav"><use xlink:href="#icon-enter"></use></svg><p>Logout</p></a>
-			</nav>
-		</div>-->
-		<!--<div id="ham-icon">
-				<svg class="icon-ham" onclick="toggleBar();"><use xlink:href="#icon-menu"></use></svg>
-			</div>-->
-			<!--<section id="event-sector">
-						<section id="scontainer">
-								<div class="slider">
-									<div class="loading">
-										<svg class="loader"><use xlink:href="#icon-spinner10"></use></svg>
-										<p>Loading...</p>
-									</div>
-									<div class="pslide">
-										<span><div><article> <img class="event-img" src="images/logo.jpg" alt="SDMCBM" /> <p>Placeholder</p></article> </div><img onload="check_count()" src="images/picjumbo.jpg" onload="check_count()" /></span>
-										<span><div><article> <img class="event-img" src="images/logo.jpg" alt="SDMCBM" /> <p>Placeholder</p></article> </div><img onload="check_count()" src="images/picjumbo.jpg" onload="check_count()" /></span>
-										<span><div><article> <img class="event-img" src="images/logo.jpg" alt="SDMCBM" /> <p>Placeholder</p></article> </div><img onload="check_count()" src="images/picjumbo.jpg" onload="check_count()" /></span>
-									</div>
-								</div>
-							</section>
-		</section>-->
-			<!--<section class="sector-event">
-				<ul>
-					<li><article><img src="images/r.jpg"/><p>Event Name</p></article></li>
-					<li><article><img src="images/r.jpg"/><p>Event Name</p></article></li>
-					<li><article><img src="images/r.jpg"/><p>Event Name</p></article></li>
-					<li><article><img src="images/r.jpg"/><p>Event Name</p></article></li>
-					<li><article><img src="images/r.jpg"/><p>Event Name</p></article></li>
-				</ul>
-				<article>
-					<h3 style="font-weight:300">Innovation at its best..</h3>
-					<p>At Sygma we Strive to innovate and encourage creativity and discovery at every level,We believe innovation is the most important personal goals
-					</p>
-				</article>
-
-			</section>-->
